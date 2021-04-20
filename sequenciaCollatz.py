@@ -50,19 +50,30 @@ inteiro deve ser fornecido. """
 
 def collatz(number):
     """ Conjectura de Collatz. """
+
     if number % 2 == 0:
         return number // 2
     elif number % 2 == 1:
         return 3 * number + 1
 
 
-number = int(input("Enter number: \n"))
 
-while True:
-    resultado = collatz(number)
-    print(resultado)
+try:
     
-    if resultado == 1:
-        break
-    else:
-        number = int(input())
+    number = int(input("Enter number: \n"))
+
+
+
+    while True:
+        resultado = collatz(number)
+        print(resultado)
+    
+        if resultado == 1:
+            break
+        else:
+            number = int(input())
+
+
+
+except ValueError:
+    print("Um número inteiro deve ser fornecido.")
