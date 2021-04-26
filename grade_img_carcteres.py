@@ -10,16 +10,10 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
-i = 0
+x = 0
 
-print()
-
-try:
-    while i < len(grid):
-        for x in grid:
-            print(x[i], end='')
-        i += 1
-        print()
-
-except IndexError:
+while x < len(grid[0]):
+    for y in grid:
+        print(y[x], end='')
+    x += 1
     print()
