@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 
+def addToInventory(inventory, addedItems):
+    """ Atualiza o inventário. """
+    for item in addedItems:
+        inventory.setdefault(item, 0)
+        inventory[item] = inventory[item] + 1
+
+    return inventory
+
+
 def displayInventory(inventory):
     """ Exiba essas informações de um inventário. """
     print("Inventory:")
@@ -13,6 +22,8 @@ def displayInventory(inventory):
     print("Total number of items: " + str(item_total))
 
 
-stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+inv = {'gold coin': 42, 'rope': 1}
+dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 
-displayInventory(stuff)
+inv = addToInventory(inv, dragonLoot)
+displayInventory(inv)
