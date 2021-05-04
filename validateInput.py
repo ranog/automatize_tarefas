@@ -14,7 +14,21 @@ pedimos que uma senha seja fornecida.
 
 Se chamarmos isdecimal() e isalnum() em variáveis, poderemos testar se
 os valores armazenados nessas variáveis são decimais ou não, ou se são
-alfanuméricos ou não. """
+alfanuméricos ou não.
+
+Eis alguns métodos de string is X comuns:
+
+- isalpha() retornará True se a string for constituída somente de letras
+e não estiver vazia.
+- isalnum() retornará True se a string for constituída somente de letras
+e números e não estiver vazia.
+- isdecimal() retornará True se a string for constituída somente de
+caracteres numéricos e não estiver vazia.
+- isspace() retornará True se a string for constituída somente de
+espaços, tabulações e quebras de linha e não estiver vazia.
+- istitle() retornará True se a string for constituída somente de
+palavras que comecem com uma letra maiúscula seguida somente de letras
+minúsculas. """
 
 while True:
     print("Enter your age: ")
