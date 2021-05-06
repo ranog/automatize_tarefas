@@ -3,6 +3,7 @@
 """ pw.py - Um programa para repositório de senhas que não é seguro. """
 
 import sys
+import pyperchip
 
 PASSWORDS = {'email': 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
         'blog': 'VmALvQyKAxiVH5G8v01if1MLZF3sdt',
@@ -15,4 +16,8 @@ if len(sys.argv) < 2:
 account = sys.argv[1]   # O primeiro argumento da linha de comando é o
                         # nome da conta.
 
-
+if account in PASSWORDS:
+    pyperclip.copy(PASSWORDS[account])
+    print("Password for " + account + " copied to clipboard.")
+else:
+    print("There is no account named " + account)
