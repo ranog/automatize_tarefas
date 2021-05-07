@@ -3,7 +3,7 @@
 """ pw.py - Um programa para repositório de senhas que não é seguro. """
 
 import sys
-import pyperchip
+import pyperclip
 
 PASSWORDS = {'email': 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
         'blog': 'VmALvQyKAxiVH5G8v01if1MLZF3sdt',
