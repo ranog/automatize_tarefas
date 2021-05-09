@@ -69,7 +69,7 @@ def printTable(tableData):
 
 
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
-        ['Alice', 'Bob', 'Carol', 'David'],
+        ['Alice', 'Bob', 'Carol', 'David', 'John'],
         ['dogs', 'cats', 'moose', 'goose'],
         ['England', 'Finland', 'France', 'Germany', 'Afghanistan']]
 
