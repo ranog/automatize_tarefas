@@ -46,6 +46,7 @@ def printTable(tableData):
         st_length = []
         for st in tableData[i]:
             st_length.append(len(st))
+
         st_length.sort()
         colWidths[i] = st_length[-1]
         i += 1
