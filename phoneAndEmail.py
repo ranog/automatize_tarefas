@@ -13,6 +13,13 @@ phoneRegex = re.compile(r'''(
         (\s*(exp|x|exp.)\s*(\d{2,5}))?  # extensão
         )'''.re.VERBOSE)
 
-# TODO: Cria a regex para email.
+# Cria a regex para email.
+emailRegex = re.compile(r'''(
+        [a-zA-Z0-9._%+-]+   # nome do usuário
+        @                   # símbolo @
+        [a-zA-Z0-9.-]+      # nome do domínio
+        (\.[a-zA-Z]{2,4})   # ponto seguido de outros caracteres
+        )''', re.VERBOSE)
+
 # TODO: Encontra correspondências no texto do clipboard.
 # TODO: Copia os resultados para o clipboard.
