@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-myPets = ['Zophie', 'Pooka', 'Fat-tail', 'Merlot']
+myPets = ['Zophie', 'Pooka', 'Fat-tail', 'Merlot', 'Melin']
 
 name = input("Enter a pet name: ")
 
