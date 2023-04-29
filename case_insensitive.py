@@ -1,9 +1,7 @@
 """
-~$ case_insensitive.py
-
 Para fazer sua regex ignorar as diferenças entre letras maiúsculas e
 minúsculas (ser case-insensitive), re.IGNORECASE ou re.I pode ser
-passado como segundo argumento de re.compile(). 
+passado como segundo argumento de re.compile().
 """
 
 import re
